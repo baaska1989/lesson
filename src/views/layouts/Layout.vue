@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation />
-    <div class="container h-screen">
+    <div class="h-48">
       <router-view />
     </div>
     <Footer />
