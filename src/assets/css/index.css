@@ -4,5 +4,5 @@
 
 .active {
     color: #1520A6 !important;
-    font-size: 18px;
+    font-size: inherit;
 }

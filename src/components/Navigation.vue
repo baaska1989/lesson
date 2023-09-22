@@ -43,21 +43,21 @@
           to="/aboutus"
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
         >
-          Бидний тухай
+          {{ $t('menu.about') }}
         </router-link>
 
         <router-link
           to="/service"
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
         >
-          Үйлчилгээ
+           {{ $t('menu.service') }}
         </router-link>
 
         <router-link
           to="/news"
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
         >
-          Мэдээ мэдээлэл
+           {{ $t('menu.news') }}
         </router-link>
         <router-link
           to="/contact"
