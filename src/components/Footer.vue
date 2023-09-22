@@ -25,6 +25,9 @@
           <li>
             <router-link to="/aboutus" class="mr-4 hover:underline md:mr-6">Бидний тухай</router-link>
           </li>
+           <li>
+            <router-link to="/service" class="mr-4 hover:underline md:mr-6">Үйлчилгээ</router-link>
+          </li>
           <li>
             <router-link to="/news" class="mr-4 hover:underline md:mr-6">Мэдээ мэдээлэл</router-link>
           </li>

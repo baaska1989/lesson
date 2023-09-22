@@ -29,43 +29,82 @@
         </svg>
       </button>
     </div>
-    <div class="block sm:hidden w-full flex-grow lg:flex lg:items-center lg:w-auto">
+    <div
+      class="block sm:hidden w-full flex-grow lg:flex lg:items-center lg:w-auto"
+    >
       <div class="text-sm lg:flex-grow">
         <router-link
           to="/"
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
         >
-          Нүүр хуудас
+          {{$t("menu.home")}}
         </router-link>
-        <router-link to="/aboutus"
+        <router-link
+          to="/aboutus"
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
         >
           Бидний тухай
         </router-link>
-        <router-link to="/news"
+
+        <router-link
+          to="/service"
+          class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+        >
+          Үйлчилгээ
+        </router-link>
+
+        <router-link
+          to="/news"
           class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
         >
           Мэдээ мэдээлэл
         </router-link>
-        <router-link to="/contact"
+        <router-link
+          to="/contact"
           class="block ml-2 mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
         >
-          Холбоо барих
+          {{ $t('menu.contact') }}
         </router-link>
       </div>
       <div>
-        <a
-          href="#"
-          class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
-          >Download</a
-        >
+        <!-- <a
+          @click="changeLang()" 
+          class="inline-block text-sm px-4 py-2 cursor-pointer leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+          >Хэл солих</a
+        > -->
+        <select  @change="changeLang($event)" v-model="lang">
+                    <option value="mn" selected>Монгол</option>
+                    <option value="en">English</option>
+    
+        </select>
       </div>
     </div>
   </nav>
 </template>
 <script>
-
 export default {
-    name: "Navigation"
-}
+  name: "Navigation",
+ data(){
+    return {
+      lang: "",
+      $i18n: {
+        locale: "mn",
+      },
+    }
+  },
+  methods: {
+    changeLang()
+    {
+      if (this.lang == "mn")
+      {
+        this.$i18n.locale = "mn";
+      }
+      if (this.lang == "en")
+      {
+        this.$i18n.locale = "en";
+      }
+     
+    },
+  }
+};
 </script>

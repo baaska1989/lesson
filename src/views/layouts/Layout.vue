@@ -1,9 +1,9 @@
 <template>
   <div>
     <Navigation />
-    <div class="h-48">
-      <router-view />
-    </div>
+      <div class="h-96">
+        <router-view />
+      </div>
     <Footer />
   </div>
 </template>
