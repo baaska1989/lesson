@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-teal-500 shadow bg-teal-500">
+  <footer class="bg-blue-600 shadow">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0">

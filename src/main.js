@@ -6,6 +6,9 @@ import VueI18n from "vue-i18n";
 Vue.use(VueI18n);
 import messages from "./helper/translate";
 
+import VueCarousel from "vue-carousel";
+Vue.use(VueCarousel);
+
 Vue.config.productionTip = false;
 
 const i18n = new VueI18n({

@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+  <nav class="flex items-center justify-between flex-wrap bg-blue-400 p-6">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
       <svg
         class="fill-current h-8 w-8 mr-2"
@@ -13,7 +13,7 @@
         />
       </svg>
       <!-- <img src="../assets/logo.png" width="54" height="54" class="fill-current h-8 w-8 mr-2"/> -->
-      <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+      <span class="font-semibold text-xl tracking-tight">Tailwind</span>
     </div>
     <div class="block lg:hidden">
       <button

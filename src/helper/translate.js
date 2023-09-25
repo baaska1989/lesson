@@ -7,14 +7,20 @@ const messages = {
       news: "Мэдээ мэдээлэл",
       contact: "Холбоо барих",
     },
+    homePage: {
+      text: "Сайн байна уу 9a",
+    },
   },
   en: {
     menu: {
       home: "Home",
       service: "Service",
       about: "About us",
-      news: "news",
+      news: "News",
       contact: "Contact",
+    },
+    homePage: {
+      text: "Hello 9a",
     },
   },
 };
